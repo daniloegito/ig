@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+        <div>
+            <form id="formDD" action="index.html">
+                <h2>CADASTRO</h2>
+
+                Nome: <input type="text" name="nome"/>
+                Login: <input id = "login" type="text" name="login"/>
+                Senha: <input type="password" name="senha" autocomplete="off"/>
+                CPF: <input id = "cpf" type="text" name="cpf" maxlength="14" onkeyup="mascara_cpf()" autocomplete="off"/>
+                Telefone: <input id = "tel" type="text" name="telefone" maxlength="15" onkeyup="mascara_tel()" autocomplete="off"/>
+                <button  type="button"  onclick="cadastro()">Cadastrar</button>
+            </form>
+        </div>
+    </body>
+</html>

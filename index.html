@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="login">
+            <h4>Sistema de Login</h4>
+            <form name="form" id="form">
+                Login: <input type="text" id="iId" name = "log" onfocus = "selecionado(this)" onblur = "descelecionado(this)"/>
+                Senha: <input type="password" id ="iPass" name = "pass" onfocus="selecionado(this)" onblur = "descelecionado(this)"/>
+                <button type="button" id="login" class="log" onmouseover="mudarCorBtn(this, true)" onmouseout="mudarCorBtn(this, false)" onclick="btnClick()">Entrar</button>
+                <h4><a href="cadastro.html">Cadastrar</a></h4>
+                <p> </p>
+            </form>
+        </div>
+        <p> </p>
+            <div id="titulo">
+                <h1>Portal de Notícias</h1>
+                <h3>As melhores notícias que ninguém lê</h3>
+            </div>
+        <p> </p>
+        <div id = "label1">
+            <h2>Samsung estaria desenvolvendo CPUs em parceria com a ARM e AMD</h2>
+            <p>Após renunciar aos chipsets Exynos, a Samsung está trabalhando com a ARM e AMD para superar a Qualcomm em processadores, indica o Business Korea. A sul-coreana estaria desenvolvendo um processador baseado no Cortex-X customizado ao lado da ARM, enquanto supre suas deficiências em GPU com a experiência da AMD.</p>
+            <form id="form1">
+                <button type = "button" name="like" class = "like" onmouseover="mudarCor(0, true, this)" onmouseout="mudarCor(0, false, this)" onclick="mudarCorLike(0, document.getElementById('form1'))">Gostei</button>
+                <button type = "button" name = "deslike" class="deslike" onmouseover="mudarCorD(0, true, this)" onmouseout="mudarCorD(0, false, this)" onclick="mudarCorDeslike(0, document.getElementById('form1'))">Não gostei</button>
+                <button type = "button" onclick="document.getElementById('label1').style.display='none'">Fechar</button>
+            </form>
+            
+        </div>
+        <p> </p>
+        <div id = "label2">
+            <h2>Xiaomi anuncia novos RedmiBook com processadores AMD Ryzen 4000</h2>
+            <p>Depois de reconquistar de vez o mercado de desktops com seus processadores Ryzen, a AMD está aumentando seu market share no segmento de dispositivos móveis. Nesta terça-feira (26), a Xiaomi anunciou seus novos RedmiBook 13, 14 e 16, todos eles com chips AMD Ryzen da série 4000. Os equipamentos prometem desempenho bem superior aos modelos lançados no ano passado, além de maior autonomia de bateria.</p>
+            <form id="form2">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(1, true, this)" onmouseout="mudarCor(1, false, this)" onclick="mudarCorLike(1, document.getElementById('form2'))">Gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(1, true, this)" onmouseout="mudarCorD(1, false, this)" onclick="mudarCorDeslike(1, document.getElementById('form2'))">Não gostei</button>
+                <button type = "button" onclick="document.getElementById('label2').style.display='none'">Fechar</button>
+            </form>
+        </div>
+        <p> </p>
+        <div id="label3">
+            <h2>Acer anuncia novos notebooks gamers Nitro 5 no Brasil</h2>
+            <p>Nesta quinta-feira (13), a Acer anunciou o lançamento dos novos notebooks gamers Acer Nitro 5 no Brasil. As novidades foram apresentadas em parceria com a AMD, fabricante dos chips Ryzen que equipam os computadores portáteis. Com fabricação nacional, o Nitro 5 chega com tela de 15,6" Full HD IPS com taxa de atualização de 60Hz. O modelo foi lançado em três versões equipadas com processadores AMD Ryzen 5 3550H e Ryzen 7 3750H, placa de vídeo NVIDIA GeForce GTX 1650 com memória dedicada de 4GB e 8GB de memória RAM.</p>
+            <form id="form3">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(2, true, this)" onmouseout="mudarCor(2, false, this)" onclick="mudarCorLike(2, document.getElementById('form3'))">Gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(2, true, this)" onmouseout="mudarCorD(2, false, this)" onclick="mudarCorDeslike(2, document.getElementById('form3'))">Não gostei</button>
+                <button type = "button" onclick="document.getElementById('label3').style.display='none'">Fechar</button>
+            </form>
+        </div>
+        <p> </p>
+        <div id="label4">
+            <h2>AMD e NVIDIA começam batalha pelas GPUs de 7 nm</h2>
+            <p>De acordo com o Wccftech, a AMD e a NVIDIA compraram toda a capacidade produtiva extra de fabricação de chips em 7 nanômetros da TSMC. Essa capacidade adicional teria sido liberada devido à Apple ter migrado seus próximos chips para a tecnologia de 5 nm. Agora, AMD e NVIDIA estariam se preparando para a batalha da próxima geração de placas de vídeo que as companhias vão apresentar até o final deste ano. Supostamente, a NVIDIA estaria aguardando o lançamento das Radeon Big Navi para poder fazer aprimoramentos na linha 3000 das RTX.</p>
+            <form id="form4">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(3, true, this)" onmouseout="mudarCor(3, false, this)" onclick="mudarCorLike(3, document.getElementById('form4'))">Gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(3, true, this)" onmouseout="mudarCorD(3, false, this)" onclick="mudarCorDeslike(3, document.getElementById('form4'))">Não gostei</button>
+                <button type = "button" onclick="document.getElementById('label4').style.display='none'">Fechar</button>
+            </form>
+        </div>
+
+    </body>
+</html>
